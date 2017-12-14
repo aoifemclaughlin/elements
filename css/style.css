@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #221A35;
+}
+
+/*
+==========================
+HOME PAGE
+==========================
+*/
+
+.background {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #221A35;
+    position: relative;
+    width: auto;
+    height: 100vh;
+}
+
+.emerald {
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    left: 200px
+}
+
+.emerald:hover {
+   animation: pop .3s infinite alternate;
+   }
+
+.kunzite {
+    position: absolute;
+    z-index: 1;
+    top: 244px;
+    left: 339px
+}
+.kunzite:hover {
+    animation: pop .3s infinite alternate;
+}
+
+.topaz {
+    position: absolute;
+    z-index: 1;
+    bottom: 155px;
+    left: 450px
+}
+.topaz:hover {
+   animation: pop .3s infinite alternate; 
+}
+.pink-tourmaline {
+     position: absolute;
+    z-index: 1;
+    bottom: 230px;
+    right: 475px
+}
+.pink-tourmaline:hover {
+   animation: pop .3s infinite alternate; 
+}
+.sapphire {
+     position: absolute;
+    z-index: 1;
+    bottom: 300px;
+    right: 315px
+}
+.sapphire:hover {
+   animation: pop .3s infinite alternate; 
+}
+/*
+==========================
+ELEMENTS PAGE
+==========================
+*/
+
+.element-container {
+    position: relative;
+    
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.gem-image{
+    position: absolute;
+    left: 150px
+}
+.gem {
+    max-width: 600px;
+    position: absolute;
+    right: 200px;
+    font-size: 24px;
+    font-family: Montserrat;
+    color: aliceblue;
+    
+}
+
+h1{
+    text-align: center;
+    font-family: Grand Hotel;
+    font-size: 150px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 40px;
+   
+}
+
+.button {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    text-decoration: none;
+    z-index: 2;
+    color: aliceblue;
+    font-family: montserrat;
+    font-weight: 500;
+    border-color: aliceblue
+}
+.button:hover {
+    color: #9D99F2;
+}
+
+/*
+==========================
+KEYFRAME
+==========================
+*/
+
+@keyframes wiggle {
+    from {
+          transform: rotate(0deg);
+    }
+    to {
+         transform: rotate(7deg);
+    }
+}
+
+@keyframes pop {
+    from {
+          transform: scale(1.05);
+    }
+    to {
+         transform: scale(1.05);
+    }
+}
+
