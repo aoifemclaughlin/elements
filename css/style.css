@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #221A35;
+    background-color: #EBE3E9;
 }
 
 /*
@@ -11,63 +11,61 @@ HOME PAGE
 */
 
 .background {
-    background-image: url(../images/background.png);
+    background-image: url(../images/header.png);
     background-repeat: no-repeat;
+    background-size: cover; 
     background-position: center;
-    background-color: #221A35;
-    position: relative;
-    width: auto;
     height: 100vh;
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.emerald {
-    position: absolute;
-    z-index: 1;
-    bottom: 50px;
-    left: 200px
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 3em; 
+    padding-top: 5em
+}
+.intro {
+    font-family: Open Sans;
+    text-align: center;
+    color: #2E1B51;
+    max-width: 700px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro h2 {
+    font-family: Sofia;
+    font-size: 45px
 }
 
 .emerald:hover {
    animation: pop .3s infinite alternate;
    }
 
-.kunzite {
-    position: absolute;
-    z-index: 1;
-    top: 244px;
-    left: 339px
-}
+
 .kunzite:hover {
     animation: pop .3s infinite alternate;
 }
 
-.topaz {
-    position: absolute;
-    z-index: 1;
-    bottom: 155px;
-    left: 450px
-}
+
 .topaz:hover {
    animation: pop .3s infinite alternate; 
 }
-.pink-tourmaline {
-     position: absolute;
-    z-index: 1;
-    bottom: 230px;
-    right: 475px
-}
+
 .pink-tourmaline:hover {
    animation: pop .3s infinite alternate; 
 }
-.sapphire {
-     position: absolute;
-    z-index: 1;
-    bottom: 300px;
-    right: 315px
-}
+
 .sapphire:hover {
    animation: pop .3s infinite alternate; 
 }
+
 /*
 ==========================
 ELEMENTS PAGE
@@ -76,7 +74,6 @@ ELEMENTS PAGE
 
 .element-container {
     position: relative;
-    
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -90,16 +87,17 @@ ELEMENTS PAGE
     position: absolute;
     right: 200px;
     font-size: 24px;
-    font-family: Montserrat;
-    color: aliceblue;
+    font-family: Open Sans;
+    color:#6B2D5C;
     
 }
 
 h1{
     text-align: center;
-    font-family: Grand Hotel;
+    font-family: Sofia;
     font-size: 150px;
-    color: white;
+    color: #6B2D5C;
+     text-shadow: 2px 2px 0 #9E618F;
     margin-top: 0;
     margin-bottom: 40px;
    
@@ -111,8 +109,8 @@ h1{
     left: 50px;
     text-decoration: none;
     z-index: 2;
-    color: aliceblue;
-    font-family: montserrat;
+    color: #9E618F;
+    font-family: Open Sans;
     font-weight: 500;
     border-color: aliceblue
 }
